@@ -1,0 +1,42 @@
+{
+  "name": "newsheadlines",
+  "widgetName": "NewsHeadLines",
+  "version": "1.0.0",
+  "description": "The NewHeadlines widget fetches and displays real-time news articles directly from a news API, giving users access to the most recent headlines in various categories like business, technology, entertainment, and more. Built using Mendix and React, this widget allows easy integration into any Mendix application, providing an engaging and dynamic news feed experience.",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Jebershon",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "./tests/testProject",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "rapiddata",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.7.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "newsheadlines": "file:"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  }
+}

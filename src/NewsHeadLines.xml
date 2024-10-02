@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="rapiddata.newsheadlines.NewsHeadLines" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>News Head Lines</name>
+    <description>The NewHeadlines widget fetches and displays real-time news articles directly from a news API, giving users access to the most recent headlines in various categories like business, technology, entertainment, and more. Built using Mendix and React, this widget allows easy integration into any Mendix application, providing an engaging and dynamic news feed experience.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="apiKey" type="string" required="true">
+                <caption>API Key</caption>
+                <description>Enter your NewsAPI key to fetch data.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+    
+</widget>
